@@ -1,0 +1,59 @@
+$color-green-light: #61A568
+$color-green-dark: #425844
+$color-blue-dark: #101D2C
+$color-white: #F5F5F5
+$color-gray: #AAAAAA
+
+$paragraph-size: 1.6rem
+$title-1-size: 4.5rem
+$title-2-size: 4rem
+$title-3-size: 1.9rem
+$title-4-size: 1.7rem
+
+
+
+*, ::after, ::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 62.75%
+    // @include respond(tab-land)
+    //     font-size: 50%
+    
+        
+
+body
+    font-family: 'Montserrat', sans-serif
+    font-weight: 400
+    color: $color-blue-dark
+    font-size: 1.6rem
+
+.container
+    display: grid
+    grid-template-rows: min-content 80vh min-content 47vh repeat(3, min-content)
+    grid-template-columns: [sidebar-start] 7.5rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem)[col-end])  [center-end] minmax(10rem, 1fr) [full-end]
+    & > *
+        color: $color-green-light
+        font-size: 1.6rem
+
+
+// @mixin screen ($breakpoint)
+
+//     @if $breakpoint == phone
+//         @media only screen and (max-width: 600px)
+//             @content
+
+//     @if $breakpoint == tab-port
+//         @media only screen and (max-width: 900px)
+//             @content
+
+//     @if $breakpoint == tab-land
+//         @media only screen and (max-width: 1200px)
+//             @content
+
+//     @if $breakpoint == bid-screen
+//         @media only screen and (min-width: 1800px)
+//             @content
+

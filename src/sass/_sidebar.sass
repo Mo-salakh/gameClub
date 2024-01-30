@@ -1,0 +1,25 @@
+
+.sidebar
+    background-color: $color-green-dark
+    grid-column: sidebar-start / sidebar-end
+    grid-row: 1 / -1
+    display: flex
+    justify-content: center
+    padding-top: 3.7rem 
+.burger-btn
+    border: none
+    height: .2rem
+    width: 4.5rem
+    background-color: white
+    &::before, &::after
+        content: ''
+        display: block
+        height: .2rem
+        width: 4.5rem
+        
+        background-color: white
+    &::before
+        transform: translateY(-1.5rem)
+    &::after
+        transform: translateY(1.5rem)
+        

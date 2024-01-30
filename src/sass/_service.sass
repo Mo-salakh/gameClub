@@ -1,0 +1,20 @@
+.service
+    padding: 15rem 0
+    grid-column: 3 / 11
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr))
+    grid-gap: 3rem 4rem
+    align-content : start
+    &__block
+        display: grid
+        grid-template-columns: min-content 1fr
+        grid-gap: 2.5rem 2rem 
+    &_icon
+        display: inline-block
+        font-size: 4.5rem
+        transform: translateY(-1rem)
+    &_text
+        color: $color-green-dark
+        grid-column: 2 / 3
+    &_title
+        color: $color-green-dark

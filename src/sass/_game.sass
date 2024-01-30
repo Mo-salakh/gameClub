@@ -1,0 +1,54 @@
+.game
+    background-color: $color-blue-dark
+    &-img
+        grid-column:  2 / 7
+        background: url(../img/game-bg.png) center /  cover no-repeat
+        display: flex
+        justify-content: center
+        position: relative
+        // display: grid
+        // grid-template-columns: repeat(16, 8fr)
+        // grid-template-rows: repeat(24, 8fr)
+        
+        &_item-1
+            width: 48rem
+            position: absolute
+            z-index: 1
+            margin-top: 6rem
+            
+            // grid-column: 3 / 15
+            // grid-row:  3 / 12
+        &_item-2 
+            width: 50rem
+            position: absolute
+            margin-bottom: 6rem
+            z-index: 2
+            bottom: 0
+            right: -3.5rem
+            // grid-column: 5 / -1
+            // grid-row: 10 / 23
+            // transform: translateX(6rem)
+        &-item
+            transition: all .2s
+            backface-visibility: hidden
+            &:hover
+                z-index: 3
+                transform: scale(1.02)
+                border-radius: 1rem
+    &-text
+        grid-column: 7 / 12
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: center
+        padding: 0 4vw
+        &_title4
+            color: $color-green-light
+            text-transform: uppercase
+        &_title2
+
+        &_paragraph
+            color: $color-gray
+            padding: 3rem 0 4rem
+
+    &-img

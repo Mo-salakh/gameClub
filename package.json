@@ -1,0 +1,21 @@
+{
+  "name": "game-club",
+  "version": "1.0.0",
+  "description": "",
+  "main": "none",
+  "scripts": {
+    "sass": "node-sass src/sass/style.sass src/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "game-club-project"
+  },
+  "author": "Solikh",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  },
+  "dependencies": {
+    "git": "^0.1.5"
+  }
+}
